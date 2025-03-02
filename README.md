@@ -67,7 +67,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-5. ### **Run All Tests**
+4. ### **Run All Tests**
 To execute all test cases one by one, use the following command:
 ```bash
 pytest tests/
