@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Word Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .big-button {
+      font-size: 24px;
+      padding: 20px 40px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .big-button:hover {
+      background-color: #0056b3;
+    }
+    .generated-word {
+      font-size: 32px;
+      margin-top: 20px;
+      color: #333;
+      word-wrap: break-word;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random Word Generator</h1>
+  <form method="POST">
+    <button type="submit" class="big-button">Generate Word</button>
+  </form>
+  {% if generated_phrase %}
+    <div class="generated-word">{{ generated_phrase }}</div>
+  {% endif %}
+</body>
+</html>
