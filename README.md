@@ -26,7 +26,7 @@ The Random Word Generator app:
 - **Backend:** Flask (Python)
 - **Frontend:** HTML, CSS
 - **Testing:** Pytest, Playwright
-- **Automation:** Mock API calls, browser interaction, functional validation
+- **Automation:** Mock API calls, browser interaction, UI and API functional validation
 
 ---
 
@@ -56,15 +56,18 @@ The Random Word Generator app:
    ```
 
 2. **Create and activate a virtual environment** 
-python -m venv venv
+```bash
+python -m venv venv 
 
 source venv/bin/activate
+```
 
 3. **Install the project dependencies**
+```bash
 pip install -r requirements.txt
+```
 
-
-4. ### **Run All Tests**
+5. ### **Run All Tests**
 To execute all test cases one by one, use the following command:
 ```bash
 pytest tests/
@@ -94,6 +97,4 @@ random-word-generator/
 ```tests/test_app_vowels.py```: Automated API test,and vowel verification of 100 generated words and with length above 3.
 
 ```templates/index.html```: UI with a button to generate words dynamically from an external API.
-
-
 
